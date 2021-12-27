@@ -1,0 +1,5 @@
+#tensorflow
+opencv-python-headless
+git+https://github.com/tehZevo/nd-to-json
+git+https://github.com/tehZevo/img-to-b64
+git+https://github.com/tehZevo/protopost-python
