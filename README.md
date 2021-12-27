@@ -13,3 +13,4 @@ POST `"<base64 encoded image>"` to `/` to receive an [nd-to-json](https://github
 
 ## TODO
 - lots of testing needed
+- support batches of images?

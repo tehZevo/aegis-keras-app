@@ -46,7 +46,8 @@ class KerasApp:
       image = cv2.resize(image, (self.resize_to, self.resize_to), interpolation=cv2.INTER_LINEAR)
 
     #preprocess inputs
-    image = self.preprocess_input(np.expand_dims(image, 0)) #TODO may have to expand dims
-    features = self.model(image)
+    #TODO: support batches?
+    image = self.preprocess_input(np.expand_dims(image, 0))
+    features = self.model(image)[0]
 
     return features
