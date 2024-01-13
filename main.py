@@ -25,7 +25,7 @@ def extract_features(data):
   #NOTE ^ this, if we plan to re-use img
   img = b64_to_img(data)
   # img = img / 255.#??
-  features = app.run(img).numpy()
+  features = app.run(img)
   return nd_to_json(features)
 
 routes = {

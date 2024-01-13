@@ -48,6 +48,6 @@ class KerasApp:
     #preprocess inputs
     #TODO: support batches?
     image = self.preprocess_input(np.expand_dims(image, 0))
-    features = self.model(image)[0]
+    features = self.model.predict_on_batch(image)[0]
 
     return features
